@@ -37,11 +37,11 @@ def playerMove(board,letter):
         move = raw_input()
         try:
             if not isSpaceFree(board, int(move)):
-                print 'It was occupied！'%move
+                print 'It was occupied'%move
                 move=''
                 continue
         except:
-            print 'please input the number（1-9）'
+            print 'please input the number(1-9)'
             continue
         
     board[int(move)] = letter 
